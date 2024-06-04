@@ -16,8 +16,7 @@ void loop(void)
   sensors.requestTemperatures(); 
   Serial.print("Temperature: ");
   Serial.print(sensors.getTempCByIndex(0));
-  Serial.print(char(176)); //prints degree symbol
-  Serial.print("C");
+  Serial.print("'C");
   Serial.println();
   delay(500);
 }
