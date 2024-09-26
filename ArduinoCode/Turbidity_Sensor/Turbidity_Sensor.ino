@@ -13,14 +13,14 @@ void loop()
 
   if (turbidity < 20) 
   {
-    Serial.print("Clear");
+    Serial.println("Clear\n");
   }
   if ((turbidity > 20) && (turbidity < 50)) 
   {
-    Serial.print("Cloudy");
+    Serial.println("Cloudy");
   }
   if (turbidity > 50) 
   {
-    Serial.print("Dirty");
+    Serial.println("Dirty");
   }
 }
